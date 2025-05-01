@@ -17,8 +17,8 @@ import {
 import { useEffect, useState } from 'react';
 import * as yup from 'yup';
 import { MyPlatform } from './My Platform/MyPlatform';
-import { MySSWPanel } from './MySSWPanel/MySSWPanel';
-import { LoginErrorNote } from './MySSWPanel/MySSWPanel.styled';
+import { MySSWPanel } from './MyMANSPanel/MyMANSPanel';
+import { LoginErrorNote } from './MyMANSPanel/MyMANSPanel.styled';
 
 const MySSW = () => {
   const [isUserLogged, setIsUserLogged] = useState(false);
@@ -32,7 +32,7 @@ const MySSW = () => {
   axios.defaults.baseURL = 'https://ap-server-8qi1.onrender.com';
 
   useEffect(() => {
-    document.title = 'My SSW | SSW';
+    document.title = 'My MANS | MANS';
 
     const refreshToken = async () => {
       console.log('token refresher');

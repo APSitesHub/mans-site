@@ -25,7 +25,7 @@ export const Timetable = ({ user, timetable }) => {
   //eslint-disable-next-line
   const [isAnimated, setIsAnimated] = useState(false);
   //eslint-disable-next-line
-  const [marathonId, setMarathonId] = useState('92196');
+  const [marathonId, setMarathonId] = useState('92197');
   //eslint-disable-next-line
   const [personalTimetable, setPersonalTimetable] = useState(
     timetable.find(timeline => marathonId === timeline.marathon)
@@ -33,13 +33,13 @@ export const Timetable = ({ user, timetable }) => {
 
   // const changeTimetable = () => {
   //   setIsAnimated(true);
-  //   setMarathonId(marathonId => (marathonId === '92196' ? '79231' : '92196'));
+  //   setMarathonId(marathonId => (marathonId === '92197' ? '79231' : '92197'));
   //   setPersonalTimetable(
   //     personalTimetable =>
   //       (personalTimetable = timetable.find(timeline =>
-  //         marathonId === '92196'
+  //         marathonId === '92197'
   //           ? '79231' === timeline.marathon
-  //           : '92196' === timeline.marathon
+  //           : '92197' === timeline.marathon
   //       ))
   //   );
   //   setTimeout(() => {
@@ -48,9 +48,9 @@ export const Timetable = ({ user, timetable }) => {
   // };
 
   const getLink = () => {
-    const baseStreamUrl = 'https://ssw.ap.education/lesson/';
+    const baseStreamUrl = 'https://mans.ap.education/lesson/';
 
-    return marathonId.includes('92196') && baseStreamUrl + 'online';
+    return marathonId.includes('92197') && baseStreamUrl + 'online';
   };
 
   const link = getLink();
@@ -87,7 +87,7 @@ export const Timetable = ({ user, timetable }) => {
               <TimetableLessonType
                 className={isAnimated ? 'animated' : undefined}
               >
-                {/* {marathonId.includes('92196')
+                {/* {marathonId.includes('92197')
                   ? 'Logistics'
                   : 'Preparation Course'} */}
                 Online Course

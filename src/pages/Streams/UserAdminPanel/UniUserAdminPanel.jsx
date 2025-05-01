@@ -20,7 +20,7 @@ import {
   UserHeadCell,
 } from './UserAdminPanel.styled';
 import { LoginLogo } from 'components/Stream/Stream.styled';
-import { LoginErrorNote } from 'pages/MySSW/MySSWPanel/MySSWPanel.styled';
+import { LoginErrorNote } from 'pages/MyMANS/MyMANSPanel/MyMANSPanel.styled';
 import { Backdrop } from 'components/LeadForm/Backdrop/Backdrop.styled';
 import { UserVisitedEditForm } from './UserVisitedHistory';
 
@@ -31,7 +31,7 @@ const setAuthToken = token => {
 };
 
 const Universities = {
-  SSW: 'SSW',
+  MANS: 'MANS',
 };
 
 const getAttendancePercentage = (attendance, group) => {
@@ -175,7 +175,7 @@ const UniUserAdminPanel = ({ uni, lang = 'ua' }) => {
       console.log('token refresher');
       try {
         if (localStorage.getItem('isAdmin')) {
-          const res = await axios.post('admins/refresh/ssw/', {});
+          const res = await axios.post('admins/refresh/mans/', {});
           setAuthToken(res.data.newToken);
           setIsUserAdmin(isAdmin => (isAdmin = true));
         }
@@ -231,7 +231,7 @@ const UniUserAdminPanel = ({ uni, lang = 'ua' }) => {
   const handleLoginSubmit = async (values, { resetForm }) => {
     setIsLoading(isLoading => (isLoading = true));
     try {
-      const response = await axios.post('/admins/login/ssw', values);
+      const response = await axios.post('/admins/login/mans', values);
       setAuthToken(response.data.token);
       setIsUserAdmin(isAdmin => (isAdmin = true));
       localStorage.setItem('isAdmin', true);

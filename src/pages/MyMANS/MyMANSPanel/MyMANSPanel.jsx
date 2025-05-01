@@ -11,7 +11,7 @@ import {
   PanelHideRightSwitch,
   PanelHideSwitch,
   TimetableBtnIcon,
-} from './MySSWPanel.styled';
+} from './MyMANSPanel.styled';
 
 export const MySSWPanel = ({
   user,
@@ -121,11 +121,11 @@ export const MySSWPanel = ({
               </APPanelBtn>
             )}
             {/* {(user.mail === 'dev@mail.com' ||
-              user.mail === 'teacher2535@ssw.pl') && (
+              user.mail === 'teacher2535@mans.pl') && (
               <APPanelBtn
                 onClick={() =>
                   window.open(
-                    'https://academy.ap.education/streams/ssw-admin-panel'
+                    'https://academy.ap.education/streams/mans-admin-panel'
                   )
                 }
               >

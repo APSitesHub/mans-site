@@ -1,5 +1,5 @@
 import { ReactComponent as PdfIcon } from '../../../img/svg/pdf-icon.svg';
-import { InfoBtnIcon } from '../MySSWPanel/MySSWPanel.styled';
+import { InfoBtnIcon } from '../MyMANSPanel/MyMANSPanel.styled';
 import {
   InfoBox,
   InfoHeading,
@@ -33,7 +33,7 @@ export const Info = () => {
               <PdfLink
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://ssw.ap.education/static/docs/Internship_journal.pdf"
+                href="https://mans.ap.education/static/docs/Internship_journal.pdf"
               >
                 <PdfIcon />
                 Internship Journal
@@ -42,7 +42,7 @@ export const Info = () => {
           </PdfBox>
 
           <Video
-            src="https://ssw.ap.education/static/docs/instructions_for_the_internship_journal.mp4"
+            src="https://mans.ap.education/static/docs/instructions_for_the_internship_journal.mp4"
             type="video/mp4"
             width={'100%'}
             controls
